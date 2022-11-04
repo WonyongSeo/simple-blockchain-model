@@ -1,0 +1,19 @@
+{
+  "name": "blockchain_model",
+  "version": "1.0.0",
+  "description": "blockchain model implemented in javascript",
+  "main": "main.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "js-sha3": "^0.8.0",
+    "merkletreejs": "^0.3.0"
+  },
+  "devDependencies": {
+    "mocha": "^10.1.0"
+  }
+}
