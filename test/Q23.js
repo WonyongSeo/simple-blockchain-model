@@ -66,12 +66,14 @@ describe('Q3. verify malicious data', function() {
         leaves = leaves.map(x => sha3_256(x));
         const tree = new MerkleTree(leaves, sha3_256);
         const root = fifthBlock.merkleRoot;
-        const leaf = sha3_256(fifthBlock.blockData[3].txData);
+        const leaf = sha3_256(fifthBlock.blockData[4].txData);
         const proof = tree.getProof(leaf);
 
+
+        console.log(proof);
         console.log(`merkleRoot : ${root}`);
         console.log(tree.toString());
         console.log(tree.verify(proof, leaf, root));
     });
     
-});    
+});

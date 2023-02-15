@@ -4,7 +4,7 @@ describe('Q1. simple model implement', function() {
     const newBlockChain = new BlockChain();
     
     before('create 5 blocks', function() {
-        newBlockChain.createBlock(5);
+        // newBlockChain.createBlock(5);
     });
 
     it('log genesis block details', function () {
